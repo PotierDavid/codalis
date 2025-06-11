@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portail Enseignant - Lycée Codalis</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .card {
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        width: 70px;
+        margin-bottom: 15px;
+      }
+      .opacity-70 {
+        opacity: 0.7;
+      }
+      img{
+        height: 80px;
+        width: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card p-4 text-center">
+      <img src="logo-lycee-codalis.png" alt="Logo Lycée Codalis" class="logo mx-auto d-block" />
+      <h4 class="mb-3">Portail Enseignant</h4>
+      <p class="text-muted small">Accès réservé aux membres du personnel</p>
+
+      <form>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="name@codalis.org"  />
+          <label for="email">Adresse email académique</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="password" placeholder="Mot de passe"  />
+          <label for="password">Mot de passe</label>
+        </div>
+        <button class="btn btn-secondary w-100">Connexion</button>
+      </form>
+
+      <p class="mt-4 opacity-70 small">© Lycée Codalis – Direction académique 2025</p>
+    </div>
+  </body>
 </html>
